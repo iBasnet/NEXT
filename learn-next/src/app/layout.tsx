@@ -40,6 +40,7 @@ export default function RootLayout({
             <Link href="/" className={pathname === "/" ? 'underline hover:underline' : 'hover:underline'}>Home</Link>
             <Link href="/user/patrick-bateman" className={pathname === "/user/patrick-bateman" ? 'underline hover:underline' : 'hover:underline'}>User</Link>
             <Link href="/clan/american-psycho" className={pathname === "/clan/american-psycho" ? 'underline hover:underline' : 'hover:underline'}>Clan</Link>
+            <Link href="/profile" className={pathname === "/profile" ? 'underline hover:underline' : 'hover:underline'}>Profile</Link>
           </nav>
         </header>
         {children}
