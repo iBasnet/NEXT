@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
           <footer className="h-[4rem] bg-slate-950 text-slate-500 flex items-center justify-center border-t-2 border-dotted border-slate-900">
             <p>&copy; {new Date().getFullYear()} ToDo App™ is a registered trademark. All Rights Reserved.</p>
           </footer>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
