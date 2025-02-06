@@ -61,6 +61,12 @@ export default function page() {
     isComplete: false,
   }
 
+  let todo = {
+    id: Date.now(),
+    desc: "Zod + Prisma + MongoDB",
+    isComplete: false,
+  }
+
   const [todos, setTodos] = useState([sampleTodo]);
   const [inputValue, setInputValue] = useState('');
   const [isEditOpen, setIsEditOpen] = useState(false);

@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>ToDo App™</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -38,7 +41,7 @@ export default function RootLayout({
         >
           <header className="h-[4rem] bg-slate-950 flex items-center justify-center border-b-2 border-dashed border-slate-900">
             < h1
-              className="text-slate-200 text-3xl text-center "
+              className="text-slate-200 text-3xl text-center"
             >ToDo App™</h1 >
             <div className="absolute right-4">
               <ModeToggle />
